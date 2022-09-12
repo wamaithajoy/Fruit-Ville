@@ -1,0 +1,62 @@
+.logo img{
+    width: 8%;
+    margin-left: 12%;
+   
+}
+nav{
+    list-style: none;
+   
+}
+nav li{
+    float: right;
+    padding: 2%;
+    text-decoration: none;
+   
+}
+nav ul{
+   text-decoration: none;
+   list-style: none;
+}
+.navbar{
+    margin-right: 20%;
+    
+}
+.fruitville{
+    margin-left: 12%;
+    margin-top: 6%;
+}
+.fruitville h1{
+   font-size: 50px;
+   color: red;
+}
+.fruitville h2{
+    margin-top: -5%;
+    margin-left: 15%;
+    font-size: 47px;
+    color: green;
+}
+.fruitville p{
+    margin-top: -2%;
+}
+.button1{
+    transition-duration: 0.4s;
+    width: 10%;
+    height: 6vh;
+    color: white;
+    background-color: green;
+    
+}
+.button1:hover{
+   
+    color: red;
+    box-shadow: 0 8px 16px 0
+     
+}
+.fruits img{
+    margin-left: 60%;
+    margin-top: -50%;
+    margin-bottom: 3%;
+}
+.fruits img:hover{
+    transform: scaleX(-1);
+}

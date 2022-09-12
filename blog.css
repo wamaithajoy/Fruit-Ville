@@ -1,0 +1,59 @@
+.types{
+    margin-left: 30%;
+    margin-top: 6%;
+}
+.types h2{
+    color: green;
+    font-size: 190%;
+    margin-left: 10%;
+    margin-top: -3%;
+}
+.image img{
+    margin-top: -13%;
+  margin-left: -1%;
+ 
+}
+.farmer img{
+    border-radius: 50%;
+    width: 18%;
+    height: 42vh;
+    margin-left: 39.5%;
+   
+}
+.mission{
+    margin-left: 34%;
+    margin-top: -30%;
+}
+.mission p{
+    font-size: 120%;
+}  
+.farmer2 img{
+    border-radius: 50%;
+    width: 18%;
+    height: 42vh;
+    margin-left: 14%;
+    margin-top: -35%;
+    margin-bottom: 1.3%;
+   
+}
+.farmer3 img{
+    border-radius: 50%;
+    width: 18%;
+    height: 42vh;
+    margin-left: 65%;
+    margin-top: -35%;
+    margin-bottom: 2.5%;
+   
+}
+.message{
+    margin-left: 15%;
+    margin-top: -3%;
+}
+.message2{
+    margin-left: 40%;
+    margin-top: -8%;
+}
+.message3{
+    margin-left: 67%;
+    margin-top: -8%;
+}  
