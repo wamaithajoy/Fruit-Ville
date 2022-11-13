@@ -4,121 +4,176 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://kit.fontawesome.com/8f27d68390.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="fruits.css">
+    <script src="fruits.js"></script>
     <title>Fruits</title>
 </head>
 <body>
-   <div class="types">
-    <h1> Types of Fruits</h1>
-   </div> 
-     <div class="card">
-      <a href="contact.html">
-     <img src="/images/mangoess-removebg-preview.png">
-     </a>
-     </div>
-     <div class="container">
-     <h4>Mangoes</h4>
-     </div>
+   <nav class="navbar">
+      <a href="home.html" >Home</a>
+      <a href="fruits.html" >Fruits</a>
+      <a href="vegetable.html" >Vegetables</a>
+      <a href="blog.html" >Testimonial</a>
+      <a href="contact.html" >Contact</a>
+  
+      </nav>
+<div class="logo">
+<img src="/images/Illustrated_Cute_Childish_Fruit_Store_Logo-removebg-preview.png">
+</div> 
 
-     <div class="card2">
-     <img src="/images/bananaa2-removebg-preview.png">
-     </div>
-     <div class="container2">
-        <h4>Bananas</h4>
-     </div>
+<!-- <div class="box"> -->
+   <div class="container">
+		<div class="card" id="item1">
+			<img src="images/appless1-removebg-preview.png">
+			<div class="title">Apples</div>
+			<div>
+				<label>Quantity: </label>
+				<select>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+               <option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					
+				</select>
+			</div>
+			<button onclick="addToCart(item1)">Add To Cart</button>
 
-     <div class="card3">
-     <img src="/images/appless1-removebg-preview.png">
-     </div>
-     <div class="container3">
-      <h4>Apples</h4>
-     </div>
+		</div>
 
-     <div class="card4">
-     <img src="/images/strawberrys-removebg-preview.png">
-     </div>
-     <div class="container4">
-        <h4>Strawberry's</h4>
-     </div>
+	</div>
 
-     <div class="card5">
-        <img src="/images/grapeess-removebg-preview.png">
-        </div>
-        <div class="container5">
-           <h4>Grapes</h4>
-        </div>
+	<div class="container1">
+		<div class="card1" id="item2">
+			<img src="images/bananaa2-removebg-preview.png" alt="">
+			<div class="title1">Bananas</div>
+			<div>
+				<label>Quantity: </label>
+				<select>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+               <option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+				</select>
+			</div>
+			<button onclick="addToCart(item2)">Add To Cart</button>
 
-        <div class="card6">
-            <img src="/images/orangee-removebg-preview.png">
-            </div>
-            <div class="container6">
-               <h4>Orange's</h4>
-            </div> 
-            
-            <div class="card7">
-                <img src="/images/pawpaw-removebg-preview.png">
-                </div>
-                <div class="container7">
-                   <h4>Pawpaw</h4>
-                </div> 
-                
-                <div class="card8">
-                    <img src="/images/kiwi-removebg-preview.png">
-                    </div>
-                    <div class="container8">
-                       <h4>Kiwi</h4>
-                    </div> 
+		</div>
 
-                      <div class="card9">
-                    <img src="/images/watermellon-removebg-preview.png">
-                    </div>
-                    <div class="container9">
-                       <h4>Watermellon</h4>
-                    </div> 
+	</div>
 
-                    <div class="card10">
-                        <img src="/images/pineapple11-removebg-preview.png">
-                        </div>
-                        <div class="container10">
-                           <h4>Pineapple</h4>
-                        </div>
-                        
-                        <div class="card11">
-                            <img src="/images/rasberry-removebg-preview.png">
-                            </div>
-                            <div class="container11">
-                               <h4>Raspberry</h4>
-                            </div> 
+	<div class="container2">
+		<div class="card2" id="item3">
+			<img src="images/cherry-removebg-preview.png" alt="">
+			<div class="title2">Cherry</div>
+			<div>
+				<label>Quantity: </label>
+				<select>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+               <option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+				</select>
+			</div>
+			<button onclick="addToCart(item3)">Add To Cart</button>
 
-                            <div class="card12">
-                                <img src="/images/cherry-removebg-preview.png">
-                                </div>
-                                <div class="container12">
-                                   <h4>Passion</h4>
-                                </div> 
+		</div>
+</div>
+<div class="container3">
+   <div class="card3" id="item4">
+      <img src="images/grapeess-removebg-preview.png" alt="">
+      <div class="title3">Grapes</div>
+      <div>
+         <label>Quantity: </label>
+         <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+         </select>
+      </div>
+      <button onclick="addToCart(item3)">Add To Cart</button>
 
-                                <a href="vegetable.html">
-                                    <button class="button2">Next</button>
-                                    </a>
+   </div>
+</div>
+<div class="container4">
+   <div class="card4" id="item5">
+      <img src="images/kiwi-removebg-preview.png" alt="">
+      <div class="title4">Kiwi</div>
+      <div>
+         <label>Quantity: </label>
+         <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+         </select>
+      </div>
+      <button onclick="addToCart(item3)">Add To Cart</button>
 
+   </div>
+</div>
+<div class="container5">
+   <div class="card5" id="item6">
+      <img src="images/mangoess-removebg-preview.png" alt="">
+      <div class="title4">Mangoes</div>
+      <div>
+         <label>Quantity: </label>
+         <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+         </select>
+      </div>
+      <button onclick="addToCart(item3)">Add To Cart</button>
 
+   </div>
+</div>
+<div class="cart" id="cart">
+   <div class="title">My Products</div><hr/>
+   <div id="title"></div>
+   <div class="mybutton">
+      <button>Check OUt</button>
+   </div>
 
-
-
-
-
-
-                    
-                    
-                
-                
-
-
-
-
-
-
-   
-   
+</div>
 </body>
 </html>

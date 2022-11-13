@@ -92,3 +92,45 @@ input[type=submit]:hover {
 .butt{
   background-color: green;
 }
+body{
+  /* background-image: url("my\ logo.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover; */
+  background-color: white;
+}
+
+.types{
+  margin-left:33% ;
+  color: black;
+}  
+.logo img{
+  width: 8%;
+  margin-left: 10%;
+  margin-top: -4.5%;
+ 
+}  
+nav{
+  list-style: none;
+  text-decoration: none;
+}
+.details{
+  margin-left: 10%;
+}
+.navbar{
+  margin-right: 8%;
+  font-size:120%;
+  cursor: pointer;
+  margin-left: 50%;
+  margin-top: 4%;
+  font-weight: bold;
+ 
+}
+.navbar a{
+padding: 9px;
+text-decoration: none;
+color:black;
+}
+.navbar a:hover{
+background-color:red;
+}   
