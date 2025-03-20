@@ -5,38 +5,181 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
-    <title>FruitVille</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Fruit Village</title>
 </head>
 <body>
 
-          <nav class="navbar">
-            <a href="home.html" >Home</a>
-            <a href="fruits.html" >Fruits</a>
-            <a href="vegetable.html" >Vegetables</a>
-            <a href="blog.html" >Testimonial</a>
-            <a href="contact.html" >Contact</a>
-        
-            </nav>
-   <div class="logo">
-    <img src="/images/Illustrated_Cute_Childish_Fruit_Store_Logo-removebg-preview.png">
-   </div> 
- 
-    
-   <div class="box">
-    <img src="/my logo.png">
-    <h1>FRUIT VILLE</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, eiusmod tempor incididunt ut labore et dolore magna . <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br> Duis aute irure dolor in reprehenderit  in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <br> occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-    <a href="fruits.html">
-    <button class="button1">Get Started</button>
-    </a>
-    <div class="image">
-        <img src="/my logo.png">
+<section id="home">
+	<div class="hero">
+		<nav class="navbar">
+			<div class="logo">
+				<img src="Images/logo.png" alt="">
+			</div>
+			<ul>
+				<li><a href="#home" class="active">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#products">Our Products</a></li>
+				<li><a href="#blog">Blog</a></li>
+				<li><a href="#contact" class="contact-btn">Contact Us</a></li>
+			</ul>
+			<div class="user-auth">
+				<button class="auth-btn" onclick="signInWithGoogle()">Login / Signup</button>
+				<img src="profile-icon.png" alt="Profile" class="profile-icon" style="display: none; width: 50px; height: 50px; border-radius: 50%;">
+			</div>
+			
+		</nav>
+
+		<div class="hero-content">
+            <p class="tagline">Fresh Fruits For You!</p>
+            <h1>
+                A <span class="highlight-green">Healthy</span> life <br>
+                is a <span class="highlight-orange">Happy</span> life.
+            </h1>
+            <p class="description">
+                Experience the finest selection of hand-picked fruits, farm fresh vegetables, and expertly crafted smoothies.
+            </p>
+            <div class="buttons">
+                <button class="btn green-btn">Add To Cart</button>
+                <button class="btn white-btn">Explore More →</button>
+            </div>
+
+			<div class="features">
+				<div class="feature">
+					<div class="icon-circle">
+						<img src="Images/juice.png" alt="Natural Juice">
+					</div>
+					<p>Natural Juice</p>
+				</div>
+				
+				<div class="feature">
+					<div class="icon-circle">
+						<img src="Images/orange.png" alt="Fresh Fruits">
+					</div>
+					<p>Fresh Fruits</p>
+				</div>
+			
+				<div class="feature">
+					<div class="icon-circle">
+						<img src="Images/leaf.png" alt="100% Pure">
+					</div>
+					<p>100% Pure</p>
+				</div>
+			</div>
+			
+        </div>
+
+		<div class="hero-image-container">
+			<img src="Images/blurrfruitt.png" alt="Raspberry Fruits" class="hero-image">
+		
+			<div class="floating-box">
+				<p class="box-title">BIG CHOICE / SELECT FRUITS</p>
+				<div class="circle-group">
+					<div class="circle main-circle">15+ Fruits</div>
+					<div class="circle fruit-circle"><img src="Images/orange.png" alt="Fruit 1"></div>
+					<div class="circle fruit-circle"><img src="Images/strawberrys.jpg" alt="Fruit 2"></div>
+					<div class="circle fruit-circle"><img src="Images/grapes.jpeg" alt="Fruit 3"></div>
+					<div class="circle fruit-circle"><img src="Images/grapes.jpeg" alt="Fruit 3"></div>
+				</div>
+				
+				<a href="products.html" class="see-more-link">
+				<div class="see-more-container">
+					<span class="see-more-text">See More</span>
+					<div class="see-more-arrow">
+					  <i class="fas fa-arrow-right"></i> 
+					</div>
+				  </div>				  
+			</div>
+
+<div class="healthy-box">
+    <p class="healthy-title">WHY FRESH FRUITS?</p>
+    <div class="benefits-list">
+        <div class="benefit-item">
+            <div class="benefit-circle">🍏</div>
+            <span>Rich in Vitamins</span>
+        </div>
+        <div class="benefit-item">
+            <div class="benefit-circle">💧</div>
+            <span>Keeps You Hydrated</span>
+        </div>
+        <div class="benefit-item">
+            <div class="benefit-circle">❤️</div>
+            <span>Boosts Immunity</span>
+        </div>
+        <div class="benefit-item">
+            <div class="benefit-circle">⚡</div>
+            <span>Increases Energy</span>
+        </div>
     </div>
 
-   </div>
-   <!-- <div class="fruits">
-   <img src="/images/fruitshaven4-removebg-preview.png">
-   </div>                -->
+    <a href="blog.html" class="learn-more-btn">Learn More</a>
+</div>
+		</div>					
+	</div>
+	</section>
+
+ <!-- Login/Signup Modal -->
+ <div class="auth-modal" id="authModal">
+	<div class="auth-modal-content">
+		<span class="close-btn" onclick="closeAuthModal()">&times;</span>
+		<div class="auth-container">
+			<div class="left-panel">
+				<h2>Let's Get Started!</h2>
+			</div>
+			<div class="right-panel">
+				<!-- Sign Up Form -->
+				<div class="signup-section">
+					<h2>Create Account</h2>
+					<div class="input-group">
+						<input type="file" id="profileImage" accept="image/*" required>
+						<input type="text" id="firstName" placeholder="First name" required>
+						<input type="text" id="lastName" placeholder="Last name" required>
+					</div>
+					<input type="email" id="signupEmail" placeholder="Enter your email" required>
+					<div class="password-container">
+						<input type="password" id="password" placeholder="Create password" required>
+						<span class="toggle-password" onclick="togglePassword('password')">👁</span>
+					</div>
+					
+					<div class="password-container">
+						<input type="password" id="confirmPassword" placeholder="Confirm password" required>
+						<span class="toggle-password" onclick="togglePassword('confirmPassword')">👁</span>
+					</div>
+					
+
+					
+					<!-- Checkbox and Terms -->
+<div class="terms-container">
+    <input type="checkbox" id="termsCheckbox" required>
+    <label for="termsCheckbox">I agree with <a href="#">Terms</a> and <a href="#">Privacy Policy</a></label>
+</div>
+
+
+					<button id="createAccount" class="btn">Create Account</button>
+					<p>OR</p>
+					<button id="googleSignUp">Sign up with Google</button>
+					<p>Already have an account? <a href="#" id="switchToLogin">Log in</a></p>
+				</div>
+
+				<!-- Login Form -->
+				<div class="login-section" style="display: none;">
+					<h2>Login</h2>
+					<input type="email" id="loginEmail" placeholder="Email Address">
+					<input type="password" id="loginPassword" placeholder="Password">
+					<button id="loginBtn" class="btn">Log in</button>
+					<p>Don't have an account? <a href="#" id="switchToSignup">Create account</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+
+<script type="module" src="auth.js"></script>
+
+
    
 </body>
 </html>
